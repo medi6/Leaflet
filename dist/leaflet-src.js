@@ -4728,7 +4728,7 @@ L.Path = L.Path.extend({
 		if (e.type === 'contextmenu') {
 			L.DomEvent.preventDefault(e);
 		}
-		if (e.type !== 'mousemove') {
+		if ((e.type !== 'mousemove')&&(e.type !== 'mousedown')) {
 			L.DomEvent.stopPropagation(e);
 		}
 	}
